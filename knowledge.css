@@ -1,0 +1,90 @@
+/* CSS Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(to right, #5271C4 0%, #B19FFF 48%, #ECA1FE 100%);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+background-image: linear-gradient(-225deg, );
+
+header h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+    padding-bottom: 60px; /* Add padding to the bottom */
+}
+
+section {
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden; /* Ensure images don't overflow */
+}
+
+section h2 {
+    color: #333;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+section p {
+    color: #666;
+    padding: 0 10px;
+}
+
+/* Footer Styles */
+footer {
+    background: linear-gradient(to right, #5271C4 0%, #B19FFF 48%, #ECA1FE 100%);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

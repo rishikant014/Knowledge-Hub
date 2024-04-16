@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Knowledge Hub</title>
+    <link rel="stylesheet" href="knowledge.css">
+    <style>
+        /* Sidebar Styles */
+        .sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidebar a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 1em; /* Changed font size */
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            color: #f1f1f1;
+        }
+
+        .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+            cursor: pointer;
+        }
+
+        .openbtn {
+            font-size: 16px; /* Changed font size */
+            cursor: pointer;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        .openbtn:hover {
+            color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar" id="sidebar">
+    <a href="#" class="closebtn" id="closeBtn">&times;</a>
+    <a href="https://www.beautiful.ai">beautiful.ai</a>
+    <a href="https://openai.com/dall-e">DALL-E</a> 
+    <a href="https://quillbot.com">QuillBOT</a> 
+    <a href="https://runwayml.com/">Runaway</a> 
+    </div>
+
+<!-- Header -->
+<header>
+    <h1>Welcome to My Knowledge Hub</h1>
+    <span class="openbtn" onclick="openSidebar()">Tools</span> <!-- Changed text -->
+    <nav>
+        <ul>
+            <li><a href="https://copilot.microsoft.com">Co Pilot</a></li>
+            <li><a href="https://chat.olakrutrim.com/">Krutrim</a></li>
+            <li><a href="https://gemini.google.com/app">Gemini</a></li>
+            <li><a href="https://chat.openai.com/">ChatGPT</a></li>
+            <li><a href="https://claude.ai/chats">Claude AI</a></li>
+            <li><a href="https://elsaspeak.com/en/">Elsa</a></li>
+            <li><a href="#research">Research Papers</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Main Content -->
+<main>
+
+    <!-- Introduction -->
+    <section id="introduction">
+        <h2>Welcome to My Knowledge Hub</h2>
+        <p>
+            My Knowledge Hub provides information about various cutting-edge technologies and AI models.
+            Explore each section to learn more about Co Pilot, Krutrim, Gemini, ChatGPT, Claude AI, and Elsa,
+            along with research papers related to these topics.
+        </p>
+    </section>
+
+    <!-- Co Pilot Section -->
+    <section id="copilot">
+        <h2>Co Pilot</h2>
+        <p>Co Pilot is a cutting-edge technology that assists developers in writing code more efficiently.</p>
+    </section>
+
+    <!-- Krutrim Section -->
+    <section id="krutrim">
+        <h2>Krutrim</h2>
+        <p>Krutrim is a revolutionary advancement in the field of artificial intelligence, focusing on self-learning algorithms.</p>
+    </section>
+
+    <!-- Gemini Section -->
+    <section id="gemini">
+        <h2>Gemini</h2>
+        <p>Gemini is a state-of-the-art cryptocurrency exchange platform, providing secure and user-friendly services for traders.</p>
+    </section>
+
+    <!-- ChatGPT Section -->
+    <section id="chatgpt">
+        <h2>ChatGPT</h2>
+        <p>ChatGPT is an advanced conversational AI model developed by OpenAI, capable of engaging in human-like conversations and providing valuable insights.</p>
+    </section>
+
+    <!-- Claude AI Section -->
+    <section id="claudeai">
+        <h2>Claude AI</h2>
+        <p>Claude AI is a sophisticated artificial intelligence system designed for data analysis and predictive modeling.</p>
+    </section>
+
+    <!-- Elsa Section -->
+    <section id="elsa">
+        <h2>Elsa</h2>
+        <p>Elsa is an innovative virtual assistant application that helps users with daily tasks, scheduling, and reminders.</p>
+    </section>
+
+    <!-- Research Papers Section -->
+    <section id="research">
+        <h2>Research Papers</h2>
+        <p>Explore research papers and publications related to Co Pilot, Krutrim, Gemini, ChatGPT, Claude AI, and Elsa to deepen your understanding of these topics.</p>
+    </section>
+
+</main>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 My Knowledge Hub. All rights reserved.</p>
+    <p>Connect with us: 
+        <a href="#">Facebook</a> | 
+        <a href="#">Twitter</a> | 
+        <a href="#">LinkedIn</a>
+    </p>
+</footer>
+
+<script>
+    "use strict";
+
+    function openSidebar() {
+        document.getElementById("sidebar").style.width = "250px";
+        document.querySelector('.content').style.marginLeft = "250px";
+    }
+
+    document.getElementById("closeBtn").addEventListener("click", function() {
+        closeSidebar();
+    });
+
+    function closeSidebar() {
+        document.getElementById("sidebar").style.width = "0";
+        document.querySelector('.content').style.marginLeft = "0";
+    }
+</script>
+
+</body>
+</html>
